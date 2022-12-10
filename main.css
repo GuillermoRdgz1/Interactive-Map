@@ -5,3 +5,7 @@ body {
 form {
     float: right;
 }
+
+#map {
+    height: 180px;
+}
