@@ -26,7 +26,31 @@ var marker = L.marker([33.766612, -118.183518]).addTo(map)
 .openPopup()
 // YOU ARE HERE
 
-//
+//foursquare
+
+const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'fsq30uycDAde0Ji+uTd3T7KhA1cV/dMlz68B2VlXhr9eHCY='
+    }
+  };
+  
+  fetch('https://api.foursquare.com/v3/places/search?query=business&ll=33.765551%2C-118.192763&limit=5', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
+
+//foursquare
+
+//arrays
+
+  
+
+
+
+
+//arrays
 
 // submit button
 document.getElementById('submit').addEventListener('click', async (event) => {
