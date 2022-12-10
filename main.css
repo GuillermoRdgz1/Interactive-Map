@@ -2,10 +2,7 @@ body {
     background-color: antiquewhite;
 }
 
-form {
-    float: right;
-}
 
 #map {
-    height: 180px;
+    height: 800px;
 }
